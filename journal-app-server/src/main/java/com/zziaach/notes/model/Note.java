@@ -14,7 +14,7 @@ import javax.persistence.GenerationType;
 import com.zziaach.notes.model.audit.UserDateAudit;
 
 @Entity
-@Table(name = "notes", uniqueConstraints = { @UniqueConstraint(columnNames = { "user_id" }) })
+@Table(name = "notes")
 public class Note extends UserDateAudit {
 
     private static final long serialVersionUID = 1L;

@@ -6,6 +6,7 @@ import com.zziaach.notes.model.Note;
 import com.zziaach.notes.model.User;
 import com.zziaach.notes.payload.NoteResponse;
 import com.zziaach.notes.payload.UserSummary;
+import com.zziaach.notes.security.UserPrincipal;
 
 public class ModelMapper {
 
@@ -19,5 +20,16 @@ public class ModelMapper {
         noteResponse.setCreatedBy(creatorSummary);
 
         return noteResponse;
+    }
+
+    public static User mapUserPricipalToUser(UserPrincipal userPrincipal) {
+        User user = new User();
+        user.setId(userPrincipal.getId());
+        user.setName(userPrincipal.getName());
+        user.setUsername(userPrincipal.getUsername());
+        user.setEmail(userPrincipal.getEmail());
+        user.setPassword(userPrincipal.getPassword());
+
+        return user;
     }
 }

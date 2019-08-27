@@ -1,0 +1,86 @@
+.note-content {
+  margin-bottom: 30px;
+  padding: 20px 15px 20px 15px;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.note-creator-info {
+  margin-left: 58px;
+  margin-bottom: 10px;
+  height: 58px;
+}
+
+.note-creator-info .creator-link {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.note-creator-info .creator-link:hover .note-creator-name {
+  color: #1890ff;
+  text-decoration: underline;
+}
+
+.note-creator-avatar {
+  float: left;
+  margin-top: 3px;
+  margin-left: -58px;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 24px;
+}
+
+.note-creator-avatar > * {
+  line-height: 48px;
+  font-size: 18px;
+}
+
+.note-creator-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+  margin-top: 4px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.note-creator-username {
+  color: #657786;
+  font-size: 15px;
+  display: inline-block;
+}
+
+.note-creation-date {
+  display: block;
+  color: #657786;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.note-title {
+  font-weight: 500;
+  font-size: 21px;
+  color: rgba(0, 0, 0, 0.85);
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .note-title {
+    font-size: 18px;
+  }
+}
+
+.note-content {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.notes-container {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
