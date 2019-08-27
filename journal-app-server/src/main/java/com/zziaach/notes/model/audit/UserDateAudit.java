@@ -4,7 +4,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.LastModifiedBy;
 
-import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
 
 @MappedSuperclass
@@ -13,7 +12,6 @@ public abstract class UserDateAudit extends DateAudit {
     private static final long serialVersionUID = 8459767112711471137L;
 
     @CreatedBy
-    @Column(updatable = false)
     private Long createdBy;
 
     @LastModifiedBy

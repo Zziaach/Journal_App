@@ -87,8 +87,17 @@ public class NoteService {
         Note note = new Note();
         note.setTitle(noteRequest.getTitle());
         note.setContent(noteRequest.getContent());
+        note.setUser(noteRequest.getUser());
 
         return noteRepository.save(note);
+    }
+
+    public Note updateNote(Note note) {
+        return noteRepository.save(note);
+    }
+
+    public void deleteNote(Long noteId) {
+        noteRepository.deleteById(noteId);
     }
 
     public NoteResponse getNoteById(Long noteId) {

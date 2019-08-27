@@ -3,6 +3,8 @@ package com.zziaach.notes.payload;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
 
+import com.zziaach.notes.model.User;
+
 public class NoteRequest {
 
     @NotBlank
@@ -11,6 +13,8 @@ public class NoteRequest {
 
     @NotBlank
     private String content;
+
+    private User user;
 
     public String getTitle() {
         return title;
@@ -26,5 +30,13 @@ public class NoteRequest {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
